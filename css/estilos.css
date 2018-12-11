@@ -87,6 +87,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .project-course, .project-date, .project-url {
   margin: 10px 0;
@@ -121,6 +122,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .hero img {
   object-fit: cover;
@@ -133,6 +135,7 @@ h2 {
   height: 70px;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 ol, ul {
   margin: 0;
@@ -252,6 +255,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .form-email input {
   border-color: gray;
@@ -308,6 +312,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer img {
   vertical-align: middle;
@@ -317,7 +322,7 @@ figure {
 }
 .container{
   /* border: 1px solid red; */
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   /* para que herede los elementos del padre */
   display: inherit;
@@ -333,7 +338,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   body {
-    border: 10px solid green;
+    /* border: 10px solid green; */
   }
 }
 @media screen and (max-width: 480px){
