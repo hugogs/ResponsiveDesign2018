@@ -215,11 +215,11 @@ figure {
 }
 .event {
   /* border: 1px solid red; */
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   /* para que ocupe el tamaño designado */
   flex-shrink: 0;
-  border-radius: 15px;
+  border-radius: 10px;
   /* Para ocultar elemntos que desborden un borde especificicado */
   overflow: hidden;
   background: #f4fbff;
@@ -321,9 +321,9 @@ figure {
   vertical-align: middle;
 }
 .footer a {
-  color: : white;
+  color: white;
 }
-.container{
+.container {
   /* border: 1px solid red; */
   max-width: 1000px;
   /* width: 100%; */
@@ -390,10 +390,24 @@ figure {
   .project-description {
     font-size: .8em;
   }
+  .event {
+    width: auto;
+    /* resetear el elemento con initial */
+    flex-shrink: initial;
+  }
+  .event img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px){
   .project-details {
     font-size: 12px;
+  }
+  .event-detail {
+    /* margin:  -40px 10px 10px 10px; */
+    /* 1em = 16px */
+    margin: -2em .5em .5em;
+    padding: 1em;
   }
 }
 @media screen and (max-width: 320px){
