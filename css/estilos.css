@@ -367,6 +367,26 @@ figure {
   height: inherit;
   flex-wrap: inherit;
 }
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* para centrar 1ra forma */
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  /* para centrar 2da forma */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  /* propiedades xq es una fuente */
+  color: white;
+}
 /* 2da forma: desde el mismo archivo estilos.css */
 /* desktop :first que empieces desde el MQ más grande */
 @media screen and (max-width: 1024px){
@@ -420,6 +440,9 @@ h1 {
   position: relative;
 }
 @media screen and (max-width: 767px) {
+  .burger-button {
+    display: block;
+  }
   .header {
     display: block;
     height: auto;
