@@ -389,7 +389,10 @@ figure {
 }
 /* 2da forma: desde el mismo archivo estilos.css */
 /* desktop :first que empieces desde el MQ más grande */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
+  .event-list-title {
+    margin-left: 0;
+  }
   .portfolio {
     padding: 0;
   }
@@ -443,6 +446,10 @@ h1 {
   position: relative;
 }
 @media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
   .burger-button {
     display: block;
   }
@@ -514,7 +521,7 @@ h1 {
     font-size: 1em;
   }
   .project-description {
-    font-size: .8em;
+    font-size: 1em;
   }
   .event {
     width: auto;
@@ -530,7 +537,7 @@ h1 {
     font-size: 1.5em;
   }
   .project-details {
-    font-size: 12px;
+    font-size: 14px;
   }
   .event-detail {
     /* margin:  -40px 10px 10px 10px; */
@@ -563,5 +570,10 @@ h1 {
   }
   .hero {
     padding: 2em 1em;
+  }
+  .social-link {
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
   }
 }
